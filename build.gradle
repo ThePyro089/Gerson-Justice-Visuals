@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.107'
+}
+version = '0.4.1'
+group = 'com.gersonjustice'
+base { archivesName = 'gerson-justice-visuals' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+neoForge { version = '21.1.172' }
+repositories { mavenCentral() }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
